@@ -16,7 +16,7 @@ const connectors = connectorsForWallets(
   ],
   {
     appName: "Archethic token Migration",
-    projectId: "4b5d58479270f9ee951a544893a2bdc7",
+    projectId: "9574f4b26c628d89c80e5f0a8026868c",
   },
 );
 
@@ -24,15 +24,15 @@ export const config = createConfig({
   chains: [mainnet, bsc, polygon, sepolia, polygonAmoy, bscTestnet],
   connectors,
   transports: {
-    [mainnet.id]: http(),
-    [bsc.id]: http(),
-    [polygon.id]: http(),
+    [mainnet.id]: http("https://eth-mainnet.alchemyapi.io/v2/xMdbzVgHW9-4yF1RoFbeWkjSX72lH9zB"),
+    [bsc.id]: http("https://bsc-dataseed.bnbchain.org"),
+    [polygon.id]: http("https://polygon-mainnet.g.alchemy.com/v2/xMdbzVgHW9-4yF1RoFbeWkjSX72lH9zB"),
     [sepolia.id]: http(
-      "https://eth-sepolia.g.alchemy.com/v2/1tMITKguTiCIv6L_F0MZGo9MFOq2OEn4",
+      "https://eth-sepolia.g.alchemy.com/v2/xMdbzVgHW9-4yF1RoFbeWkjSX72lH9zB",
     ),
     [polygonAmoy.id]: http(
-      "https://polygon-amoy.g.alchemy.com/v2/1tMITKguTiCIv6L_F0MZGo9MFOq2OEn4",
+      "https://polygon-amoy.g.alchemy.com/v2/xMdbzVgHW9-4yF1RoFbeWkjSX72lH9zB",
     ),
-    [bscTestnet.id]: http(),
+    [bscTestnet.id]: http("https://bsc-testnet.publicnode.com"),
   },
 });
