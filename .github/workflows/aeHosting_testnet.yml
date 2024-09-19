@@ -3,7 +3,7 @@ name: CI/CD
 on:
     push:
       branches:
-        - 3-add-aehosting-testnet-configuration
+        - main
 
 jobs:
   deploy_to_aeHosting:
