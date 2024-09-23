@@ -68,7 +68,7 @@ export default function Overview() {
               ensure future compatibility.
             </p>
             <a
-              href={"https://wiki.archethic.net/category/FAQ"}
+              href={"https://wiki.archethic.net/FAQ/migration-erc-token"}
               target={"_blank"}
             >
               <Button variant="secondary" className="w-fit">
