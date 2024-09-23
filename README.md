@@ -25,3 +25,5 @@ Migrating to the new ERC-20 UCO token is essential to ensure that users' tokens 
 ## Migration app
 
 This repository contains the web application enabling users to migrate UCO V1 tokens to UCO V2.
+
+[Built by Ennea Studio](https://ennea.dev/)
