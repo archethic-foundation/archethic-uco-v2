@@ -14,7 +14,7 @@ export default function Disconnected() {
             tokens, it is important to migrate them to this new version to
             ensure future compatibility.
           </p>
-          <a href={"https://wiki.archethic.net/category/FAQ"} target={"_blank"}>
+          <a href={"https://https://wiki.archethic.net/FAQ/migration-erc-token"} target={"_blank"}>
             <Button variant="secondary" className="w-fit">
               Learn more
             </Button>
