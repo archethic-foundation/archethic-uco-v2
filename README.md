@@ -1,52 +1,27 @@
-# React + TypeScript + Vite
+# Migration of ERC-20 UCO Tokens
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules .
+## Introduction
 
+### Project Background:
+The Archethic project initially launched a token called UCO (Archethic Universal Coin), based on the ERC-20 standard, available on several blockchains: Ethereum, Polygon, and the BNB Chain. Since then, the project has made significant progress, including the launch of its own blockchain (mainnet) in December 2022, and the opening of a bridge and a decentralized exchange in May 2024.
 
+Now that the UCO is natively available on the Archethic blockchain, it is time to update the ERC-20 token to reflect these changes.
 
-Currently, two official plugins are available:
+### Why a Migration?
+The migration to a new ERC-20 UCO token is necessary for several reasons:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Updating Information: The current ERC-20 token is outdated. For example, the token's name and the total supply need to be modified to reflect the project's current status.
 
-## Expanding the ESLint configuration
+Harmonizing Functionality: The current versions of the UCO token on different blockchains (Ethereum, Polygon, BNB Chain) do not function in the same way. The new ERC-20 UCO token will be designed to operate uniformly across all blockchains, with functions such as mint (creation of new tokens) and burn (destruction of tokens), which are missing in some current versions.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### What Does This Mean for users?
+If you hold ERC-20 UCO tokens, you will need to migrate them to the new version (Version 2). This migration ensures that you will be using an up-to-date, secure token that functions across all compatible blockchains.
 
-- Configure the top-level `parserOptions` property like this:
+The migration will be facilitated by a specially designed smart contract to make this process as simple and secure as possible. You will also have access to tools to help you transition smoothly.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### In Summary:
+Migrating to the new ERC-20 UCO token is essential to ensure that users' tokens remain up-to-date with the latest developments in the Archethic project. This update will allow for better compatibility and security while harmonizing the token's functionality across all blockchains.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Migration app
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This repository contains the web application enabling users to migrate UCO V1 tokens to UCO V2.
