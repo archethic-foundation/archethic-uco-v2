@@ -31,8 +31,10 @@ jobs:
           seed: ${{ secrets.ARCH_BASE_MAINNET_SEED }}
           endpoint: "https://mainnet.archethic.net"
           path: "./dist"
-          keychainFundingService: "archethic-wallet-ARCHETHIC.NET"
+          keychainFundingService: "archethic-wallet-archethic-front-app"
           keychainWebsiteService: "aeweb-UCO-Migration"
+          sslCertificateFile: "certificate_mainnet.crt"
+          sslKey: ${{ secrets.SSL_KEY_MAINNET }}
           sendTransactionTimeout: 180
           percentageOfConfirmations: 50  
         
