@@ -33,7 +33,7 @@ jobs:
           path: "./dist"
           keychainFundingService: "archethic-wallet-archethic-front-app"
           keychainWebsiteService: "aeweb-UCO-Migration"
-          sslCertificateFile: "certificate_bridge_mainnet.crt"
+          sslCertificateFile: "certificate_mainnet.crt"
           sslKey: ${{ secrets.SSL_KEY_MAINNET }}
           sendTransactionTimeout: 180
           percentageOfConfirmations: 50  
