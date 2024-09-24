@@ -3,7 +3,7 @@ name: CI/CD
 on:
     push:
       branches:
-        - main
+        - preprod
 
 jobs:
   deploy_to_aeHosting:
