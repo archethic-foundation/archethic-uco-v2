@@ -16,7 +16,7 @@ const connectors = connectorsForWallets(
   ],
   {
     appName: "Archethic token Migration",
-    projectId: "4b5d58479270f9ee951a544893a2bdc7",
+    projectId: "9574f4b26c628d89c80e5f0a8026868c",
   },
 );
 
