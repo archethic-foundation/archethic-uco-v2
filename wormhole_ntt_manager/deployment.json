@@ -27,7 +27,7 @@
     "Ethereum": {
       "version": "1.1.0",
       "mode": "burning",
-      "paused": true,
+      "paused": false,
       "owner": "0xEcA37F68c9ca7964fC0b3A7aB4f0D6e964f8FD68",
       "manager": "0xB16Bf54398A913799D537C0c472394AeA4Fb8EfC",
       "token": "0x1A688D3d294ee7BcC1f59011DE93d608Dc21c377",
