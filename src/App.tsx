@@ -25,7 +25,7 @@ const App = () => {
               <Route index element={<Migration />} />
               <Route
                 path={"/bridge"}
-                element={<WormholeConnect config={wormholeConfig} theme={theme} />}
+                element={<WormholeConnect config={wormholeConfig} />}
               />
             </Route>
           </Routes>

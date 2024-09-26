@@ -11,7 +11,7 @@ export const wormholeConfig: WormholeConnectConfig = {
       "https://polygon-mainnet.g.alchemy.com/v2/xMdbzVgHW9-4yF1RoFbeWkjSX72lH9zB",
     bsc: "https://bsc-dataseed.bnbchain.org",
   },
-  route: ["nttManual"],
+  routes: ["nttManual"],
   tokens: ["UCOEthereum", "UCOBsc", "UCOPolygon"],
   bridgeDefaults: {
     fromNetwork: "ethereum",
