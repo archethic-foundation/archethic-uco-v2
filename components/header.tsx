@@ -6,29 +6,24 @@ import logo from "../src/images/logo.svg";
 import { WalletAccount } from "./wallet-account.tsx";
 
 import { useState } from "react";
-import { Button } from "./button.tsx";
-import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
   const { address } = useAccount();
-  const { pathname } = useLocation();
-
-  const isBridge = pathname.includes("bridge");
 
   return (
     <header className="absolute top-0 left-0 right-0 w-full  px-[25px] lg:px-[40px] xl:px-[60px] 2xl:px-[80px] py-[20px] xl:py-[28px] 2xl:py-[32px]">
       <div className={"flex justify-between items-center"}>
         <div className="flex items-center gap-[20px]">
           <img
-            data-aos={isBridge ? "none" : "fade-down"}
+            data-aos={"none"}
             data-aos-delay="100"
             data-aos-duration="1000"
             src={logo}
             alt="logo"
             className="w-[145.486px] h-[24px] xl:w-[169.736px] xl:h-[28px] 2xl:w-[212.17px] 2xl:h-[35px] "
           />
-          {!isBridge && address && (
+          {address && (
             <div className="hidden lg:block">
               <div className="flex items-center gap-[10px]">
                 <div className="h-[32px] w-px bg-purple"></div>
@@ -37,7 +32,7 @@ export default function Header() {
             </div>
           )}
         </div>
-        {!isBridge && (
+        {(
           <>
             <div className="hidden md:block">
               <WalletAccount onClose={() => setOpen(false)} />
@@ -65,11 +60,6 @@ export default function Header() {
             <WalletAccount onClose={() => setOpen(false)} />
           </div>
         )}
-      </div>
-      <div className={`${isBridge ? "py-3" : ""} flex lg:py-4`}>
-        <Link to={isBridge ? "/" : "/bridge"}>
-          <Button size={"small"}>{isBridge ? "Migration" : "Bridge"}</Button>
-        </Link>
       </div>
     </header>
   );
