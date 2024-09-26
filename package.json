@@ -1,5 +1,5 @@
 {
-  "name": "bridge-migration-app",
+  "name": "migration-uco-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,11 +14,6 @@
     "@rainbow-me/rainbowkit": "^2.1.4",
     "@react-buddy/ide-toolbox": "^2.4.0",
     "@tanstack/react-query": "^5.52.2",
-    "@wormhole-foundation/sdk": "0.8.2",
-    "@wormhole-foundation/sdk-definitions-ntt": "0.2.0-beta.0",
-    "@wormhole-foundation/sdk-evm-ntt": "0.2.0-beta.0",
-    "@wormhole-foundation/sdk-route-ntt": "0.2.0-beta.0",
-    "@wormhole-foundation/wormhole-connect": "^0.3.19",
     "aos": "^2.3.4",
     "class-variance-authority": "^0.7.0",
     "ethers": "^6.13.2",

@@ -7,8 +7,6 @@ import { config } from "../config/wagmi/config.ts";
 import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import "@rainbow-me/rainbowkit/styles.css";
 import { Route, Routes } from "react-router-dom";
-import WormholeConnect from "@wormhole-foundation/wormhole-connect";
-import { wormholeConfig } from "../config/wormhole.ts";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -23,10 +21,6 @@ const App = () => {
           <Routes>
             <Route path={"/"} element={<RootLayout />}>
               <Route index element={<Migration />} />
-              <Route
-                path={"/bridge"}
-                element={<WormholeConnect config={wormholeConfig} />}
-              />
             </Route>
           </Routes>
         </RainbowKitProvider>
