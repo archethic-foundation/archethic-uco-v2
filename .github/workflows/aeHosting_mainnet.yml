@@ -36,5 +36,5 @@ jobs:
           sslCertificateFile: "certificate_mainnet.crt"
           sslKey: ${{ secrets.SSL_KEY_MAINNET }}
           sendTransactionTimeout: 180
-          percentageOfConfirmations: 50  
+          percentageOfConfirmations: 30  
         
