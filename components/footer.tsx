@@ -26,21 +26,13 @@ const Products = [
   {
     title: "Explorer (aeExplorer)",
     link: "https://explorer.archethic.net",
-  },
-  {
-    title: "Biometric cold wallet",
-    link: "https://www.archethic.net/wallet_hw.html",
-  },
+  }
 ];
 
 const Ressources = [
   {
     title: "Knowledge center",
     link: "https://wiki.archethic.net",
-  },
-  {
-    title: "White paper",
-    link: "https://www.archethic.net/assets/files/white_paper.pdf",
   },
   {
     title: "Technical paper",
@@ -51,7 +43,7 @@ const Ressources = [
 const General = [
   {
     title: "Contact Us",
-    link: "mailto:contact@archethic.net",
+    link: "mailto:hello@archethic.net",
   },
   {
     title: "Terms of Use",
